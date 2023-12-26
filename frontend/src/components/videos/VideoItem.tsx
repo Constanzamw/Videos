@@ -30,15 +30,18 @@ const VideoItem = ({ video, loadVideos }: Props) => {
     <div className="col-md-4">
       <div className="card card-body video-card">
         <div className="d-flex justify-content-between">
-          <h1 onClick={() => navigate(`/update/${video._id}`)}>{video.title}</h1>
-          <span className="text-danger" onClick={handleDelete}>
+        <div className="delete-container" onClick={handleDelete}>
+          <span className="text-danger delete-icon">
             x
           </span>
+          </div>
         </div>
-        <p>{video.description}</p>
+        
         <div className="embed-responsive embed-responsive-16by9">
           <ReactPlayer url={video.url} width="100%" height="100%" className="react-player" />
         </div>
+        <h1 className="video-title"  onClick={() => navigate(`/update/${video._id}`)}>{video.title}</h1>
+        <p>{video.description}</p>
       </div>
     </div>
   );

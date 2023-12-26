@@ -1,0 +1,40 @@
+/* VideoForm.css */
+
+.video-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin: auto; /* Centra el formulario horizontalmente */
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+  }
+  
+  .card {
+    background-color: transparent !important;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    background-color: transparent ;/* Hace el fondo completamente transparente */
+    border: 1px solid #7d28aa; /* Cambia el color del borde a violeta */
+    color: #fff;
+    border-radius: 5px; /* Agrega bordes redondeados */
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 5px rgba(125, 40, 170, 0.5); /* Cambia el color de la sombra al violeta */
+  }
+  
+  .btn {
+    background-color: #7d28aa;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #ce46d5;
+  }
+  
+  

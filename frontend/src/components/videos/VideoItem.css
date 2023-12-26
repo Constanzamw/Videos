@@ -1,4 +1,36 @@
-.video-card:hover{
-    border: 1px solid #333;
+.video-card {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-card:hover {
+    border: 2px solid #8313e6;
     cursor: pointer;
-}
+    transform: scale(1.06);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .video-title {
+    color: white;
+    margin-top: 5px; /* Ajusta el margen superior negativo para solucionar la superposición */
+    position: relative;
+  }
+  
+  .delete-container {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  

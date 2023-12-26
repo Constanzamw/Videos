@@ -1,0 +1,32 @@
+
+    
+  .link {
+    font-weight: normal;
+    text-decoration: none;
+    color: #e9cdf1; /* Color del texto no activo */
+    margin: 0 15px; /* Espaciado entre enlaces */
+  }
+  .link:hover {
+    color: #ce46d5; /* Cambia el color del texto al pasar el ratón */
+  }
+  
+  
+
+  .container{
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: -20px;
+       
+    
+  }
+
+  .nav{
+    
+    border-bottom: solid 1px #ce46d5;
+    padding-bottom: 5px;
+  }
+  .link.active {
+    font-weight:bold;
+    color: #7d28aa;
+  }
+ 

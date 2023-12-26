@@ -3,6 +3,8 @@ import { Video } from "../../utils/video"
 import * as videoService from "../../utils/videoService"
 import {toast} from "react-toastify"
 import { useNavigate, useParams } from 'react-router-dom';
+import "./VideoForm.css"
+
 
 type InputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement >;  // en vez de hacer todo dentro del () lo hace aca
 
