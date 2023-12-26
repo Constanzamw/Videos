@@ -2,25 +2,30 @@ import { Video } from "../../utils/video"
 import ReactPlayer from "react-player"
 import "./videoItem.css"
 import { useNavigate } from "react-router-dom"
+import * as videoService from "../../utils/videoService"
 
 interface Props{
-  video: Video
+  video: Video ;
+  loadVideos: ()=> void,
+
 }
 
 
-const VideoItem = ({video}: Props) => {
+const VideoItem = ({video , loadVideos}: Props) => {
 
   const navigate = useNavigate()
+
+  const handleDelete= async(id:string) => {
+    await videoService.deleteVideo(id)
+    loadVideos()
+  }
   
   return (
     <div className="col-md-4">   
-     <div 
-        className="card card-body video-card" 
-        onClick={()=> navigate(`/update/${video._id}`) }
-     >
+     <div className="card card-body video-card" >
        <div className="d-flex justify-content-between">
-         <h1> {video.title} </h1>
-          <span className="text-danger">
+         <h1 onClick={()=> navigate(`/update/${video._id}`) }> {video.title} </h1>
+          <span className="text-danger" onClick={ ()=> video._id && handleDelete(video._id)}>
               x
           </span>
         </div>

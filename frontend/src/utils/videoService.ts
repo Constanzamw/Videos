@@ -22,3 +22,8 @@ export const updateVideo = async (id:string , video: Video) =>{
     return await axios.put<Video>(`${urlBase}/videos/${id}`, video)
     
 }
+
+export const deleteVideo = async (id:string ) =>{
+    return await axios.delete<Video>(`${urlBase}/videos/${id}`)
+    
+}
