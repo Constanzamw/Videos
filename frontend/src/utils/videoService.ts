@@ -19,6 +19,6 @@ export const getVideo = async (id:string) =>{
 }
 
 export const updateVideo = async (id:string , video: Video) =>{
-    return await axios.get<Video>(`${urlBase}/videos/${id}`, video)
+    return await axios.put<Video>(`${urlBase}/videos/${id}`, video)
     
 }
