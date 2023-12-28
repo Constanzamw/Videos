@@ -9,7 +9,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename='/vite-project'>
+    <BrowserRouter >
       <div className="container p-4" style={{ minHeight: '100vh', height: '100%' }}>
        <App />
        </div>
