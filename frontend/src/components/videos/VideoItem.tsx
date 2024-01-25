@@ -1,6 +1,6 @@
 import { Video } from "../../utils/video"
 import ReactPlayer from "react-player"
-import "./videoItemCss.css"
+//import "./videoItemCss.css"
 import { useNavigate } from "react-router-dom"
 import * as videoService from "../../utils/videoService"
 
