@@ -1,7 +1,7 @@
 import axios from "axios"
 import { Video } from "./video"
 
-const urlBase = "https://videos-beige-alpha.vercel.app/"
+const urlBase = "https://videos-beige-alpha.vercel.app"
 
 export const getVideos = async () =>{
     return await axios.get<Video[]>(`${urlBase}/videos`)
