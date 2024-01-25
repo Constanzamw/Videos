@@ -13,7 +13,7 @@ app.set("PORT", config.PORT);
 
 app.use(morgan("dev"));
 app.use(cors({
-  origin: 'https://videos-beige-alpha.vercel.app/'
+  origin: 'https://videos-beige-alpha.vercel.app'
 }));
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', "*");
